@@ -34,12 +34,12 @@ inquirer
     {
       type: 'input',
       name: 'title',
-      message: 'How wouid you like to automate your introduction?',
+      message: 'What would you like your title to be??',
     },
     {
       type: 'input',
       name: 'location',
-      message: 'Do you pray to our lord and saviour, Imperator Caesar Lucius Domitius Aurelian Augustus?',
+      message: 'where is your location?',
     },
     {
       type: 'input',
