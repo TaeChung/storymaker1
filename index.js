@@ -1,33 +1,34 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateREADME = (answers) =>
-  `#<README.MD GENERATOR>${
-    answers.title
-  }
+function generateREADME(answers) {
+  return `
+  # ${answers.title}
 
-##Cementing thine eternal legacy
+  ## Description
+  ${answers.description}
 
-  With this arcane software, you too can instantly introduce the purpose of thine holy code.
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
-  -To help others verbally express themselves in a concise yet precise manner.
-  -To help share relevant information.
-  -${
-    answers.location
-  }
-  ${
-    answers.hobby
-  }
-  ${
-    answers.food
-  }
-  ${
-    answers.github
-  }
-  ${
-    answers.linkedin
-  }
-`;
+  ## Usage
+  ${answers.usage}
+
+  ## License
+  This application is covered  under the ${answers.liicense} license.
+
+  ## Contributing
+  ${answers.contributing}
+
+  `;
+}
+
+
 
 inquirer
   .prompt([
