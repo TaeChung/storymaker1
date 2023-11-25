@@ -25,6 +25,8 @@ function generateREADME(answers) {
   ## Contributing
   ${answers.contributing}
 
+  ## Test
+
   `;
 }
 
